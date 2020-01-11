@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.IO;
+using System;
 
 namespace CustomBobbleHead
 {
@@ -11,25 +12,25 @@ namespace CustomBobbleHead
         public static GameObject GetAssetBundleAsGameObject(string path, string name)
         {
             Debug.Log("AssetBundleLoader: Attempting to load AssetBundle...");
-            AssetBundle bundle = AssetBundle.LoadFromFile(path);
-            if(bundle != null)
+            AssetBundle bundle = null;
+            try
             {
+                bundle = AssetBundle.LoadFromFile(path);
                 Debug.Log("AssetBundleLoader: Success.");
             }
-            else
+            catch(Exception e)
             {
-                Debug.Log("AssetBundleLoader: Couldn't load AssetBundle from path: '" + path + "'");
+                Debug.Log("AssetBundleLoader: Couldn't load AssetBundle from path: '" + path + "'. Exception details: e: " + e.Message);
             }
 
             Debug.Log("AssetBundleLoader: Attempting to retrieve: '" + name + "' as type: 'GameObject'.");
-            var temp = bundle.LoadAsset(name, typeof(GameObject));
-
-            if(temp != null)
+            try
             {
+                var temp = bundle.LoadAsset(name, typeof(GameObject));
                 Debug.Log("AssetBundleLoader: Success.");
                 return (GameObject)temp;
             }
-            else
+            catch(Exception e)
             {
                 Debug.Log("AssetBundleLoader: Couldn't retrieve GameObject from AssetBundle.");
                 return null;
