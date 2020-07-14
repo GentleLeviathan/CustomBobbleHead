@@ -1,6 +1,8 @@
 # CustomBobbleHead
 CustomBobbleHead mod for VTOLVR
 
+Needs an update. Will update with an example asset a bit later.
+
 Requires VTOLVR ModLoader by . Marsh.Mello . (https://github.com/MarshMello0)
 https://github.com/MarshMello0/VTOLVR-ModLoader/tree/release/ModLoader
 
