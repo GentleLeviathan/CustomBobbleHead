@@ -6,8 +6,6 @@ namespace CustomBobbleHead
 {
     static class FileLoader
     {
-
-
         //PUBLIC LOADING METHODS
         public static GameObject GetAssetBundleAsGameObject(string path, string name)
         {

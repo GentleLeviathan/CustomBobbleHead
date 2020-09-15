@@ -75,3 +75,5 @@ C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\obj\Debug\C
 C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\obj\Debug\CustomBobbleHead.csproj.CopyComplete
 C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\obj\Debug\CustomBobbleHead.dll
 C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\obj\Debug\CustomBobbleHead.pdb
+C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\bin\Debug\HttpAuth.dll
+C:\Users\UntoldRiches\source\repos\CustomBobbleHead\CustomBobbleHead\bin\Debug\ModLoader.xml
